@@ -9,6 +9,7 @@
 /// <history>2010/05/01 Subversionで管理するため不要なコメント削除</history>
 //=========================================================================
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,6 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Text;
 using System.Windows.Forms;
-using System.Collections;
 using System.IO;
 using System.Diagnostics;
 using magicAnime.Properties;
@@ -54,6 +54,8 @@ namespace magicAnime
 #endif
 		private Image				mCellBuffer;
 		private Graphics			mCellGraphics;
+
+		private MainFormController  ctlr = new MainFormController();
 
 		//----------------------
 		// アイコンリソース
@@ -284,13 +286,12 @@ namespace magicAnime
 		//=========================================================================
 		internal void RefreshContent()
 		{
-			AnimeServer		server		= AnimeServer.GetInstance();
-			int				rowIndex;
+			IReadOnlyList<AnimeProgram> animeList = ctlr.GetProgramList(textBoxFilter.Text);
 
 //			dataGrid.Rows.Clear();
 
 // <PENDING> 2010/02/20 ->
-			lock (server)
+			lock (dataGrid)
 // <PENDING> 2010/02/20 <-
 			{
 				int	i, addCols;
@@ -317,12 +318,7 @@ namespace magicAnime
 						//----------------------------
 						// 話数表示モード
 						//----------------------------
-
-						foreach( AnimeProgram prog in server.Animes )
-						{
-							addCols = System.Math.Max( addCols, prog.StoryCount );
-						}
-
+						addCols = (animeList.Count == 0) ? 0 : animeList.Max((prog) => prog.StoryCount);
 						addCols = Math.Min(addCols, 500);	// グリッドの横幅最大値をオーバーしないため
 						dataGrid.ColumnCount = ColumnStoryCount.Index + addCols + 1;
 
@@ -405,15 +401,15 @@ namespace magicAnime
 				// 行の拡縮を行う
 				//----------------------------
 
-				dataGrid.RowCount = server.Animes.Count;
+				dataGrid.RowCount = animeList.Count;
 
 				//----------------------------
 				// 各行の内容を更新
 				//----------------------------
-				foreach (AnimeProgram prog in server.Animes)
+				foreach (int rowIndex in Enumerable.Range(0, animeList.Count))
 				{
-					rowIndex			= server.Animes.IndexOf( prog );
-					DataGridViewRow row	= dataGrid.Rows[rowIndex];
+					AnimeProgram    prog = animeList[rowIndex];
+					DataGridViewRow row	 = dataGrid.Rows[rowIndex];
 
 					// セルのTagをクリア
 					foreach( DataGridViewCell cell in row.Cells )
@@ -537,9 +533,11 @@ namespace magicAnime
 			};
 
 			playUnreadButton.DropDownItems.Clear();
+
+			AnimeServer	server = AnimeServer.GetInstance();
 			server.EnumAllEpisodes(callBack, null); // 未読を列挙する
-			playUnreadButton.Enabled =	(0 < count)
-									&&	!Settings.Default.disableUnread;
+
+			playUnreadButton.Enabled = (0 < count) && !Settings.Default.disableUnread;
 
 			Program.mTrayIcon.RefreshUnread();
 		}
@@ -2973,7 +2971,26 @@ namespace magicAnime
 			}
 		}
 
+		/*=============================================*
+		 *	program filter
+		 *=============================================*/
+		private void timerProgramFilter_Tick(object sender, EventArgs e)
+		{
+			timerProgramFilter.Enabled = false;
+			RefreshContent();
+		}
+
+		private void textBoxFilter_TextChanged(object sender, EventArgs e)
+		{
+			timerProgramFilter.Enabled = false;
+			timerProgramFilter.Enabled = true;
+		}
+
+		private void textBoxFilter_Leave(object sender, EventArgs e)
+		{
+			timerProgramFilter.Enabled = false;
+			RefreshContent();
+		}
 	}
-	
 }
 

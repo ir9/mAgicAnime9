@@ -81,6 +81,7 @@
     <Compile Include="PathHelper.cs" />
     <Compile Include="DateTimeHelper.cs" />
     <Compile Include="MakeThumbnail.cs" />
+    <Compile Include="UserInterface\MainFormController.cs" />
     <Compile Include="UserInterface\StationTableDialog.cs">
       <SubType>Form</SubType>
     </Compile>
