@@ -43,7 +43,7 @@ namespace magicAnime
 		public class EpisodeList : List<AnimeEpisode> { };
 
 		public		string		title;
-		public		 bool		linkOnlineDatabase;	// オンラインデータｰベース(しょぼかる)と連動
+		public		bool		linkOnlineDatabase;	// オンラインデータｰベース(しょぼかる)と連動
 		public		int			syoboiTid;			// しょぼかるTID
 		public		string		tvStation;			// 録画テレビ局名(録画ソフトへ渡す局名)
 		public		string		syoboiTvStation;	// しょぼかるテレビ局名(データを引くための局名)

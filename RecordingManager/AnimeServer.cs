@@ -29,6 +29,8 @@ using magicAnime.Properties;
 
 namespace magicAnime
 {
+	using AnimeList = List<AnimeProgram>;
+
 	[FlagsAttribute]
 	public enum updateOption
 	{
@@ -57,7 +59,7 @@ namespace magicAnime
 		{
 		}
 	};
-	
+
 	//=========================================================================
 	///	<summary>
 	///		mAgicAnime番組管理サービスクラス
@@ -86,7 +88,6 @@ namespace magicAnime
 		//---------------------
 		// 型定義
 		//---------------------
-		public class AnimeList : List<AnimeProgram> {};
 
 		// ステータスクラス
 		internal struct MyStatus
