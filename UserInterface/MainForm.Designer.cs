@@ -147,6 +147,7 @@
 			this.contextMenuStrip.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.mainToolBar.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.viewSplitContainer)).BeginInit();
 			this.viewSplitContainer.Panel1.SuspendLayout();
 			this.viewSplitContainer.Panel2.SuspendLayout();
 			this.viewSplitContainer.SuspendLayout();
@@ -156,7 +157,7 @@
 			// 
 			label6.AutoSize = true;
 			label6.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			label6.Location = new System.Drawing.Point(24, 8);
+			label6.Location = new System.Drawing.Point(24, 7);
 			label6.Name = "label6";
 			label6.Size = new System.Drawing.Size(69, 15);
 			label6.TabIndex = 10;
@@ -166,7 +167,7 @@
 			// 
 			label7.AutoSize = true;
 			label7.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			label7.Location = new System.Drawing.Point(24, 60);
+			label7.Location = new System.Drawing.Point(24, 55);
 			label7.Name = "label7";
 			label7.Size = new System.Drawing.Size(40, 15);
 			label7.TabIndex = 5;
@@ -176,7 +177,7 @@
 			// 
 			label4.AutoSize = true;
 			label4.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			label4.Location = new System.Drawing.Point(24, 32);
+			label4.Location = new System.Drawing.Point(24, 29);
 			label4.Name = "label4";
 			label4.Size = new System.Drawing.Size(67, 15);
 			label4.TabIndex = 3;
@@ -185,18 +186,18 @@
 			// toolStripMenuItem5
 			// 
 			toolStripMenuItem5.Name = "toolStripMenuItem5";
-			toolStripMenuItem5.Size = new System.Drawing.Size(171, 6);
+			toolStripMenuItem5.Size = new System.Drawing.Size(160, 6);
 			// 
 			// toolStripSeparator6
 			// 
 			toolStripSeparator6.Name = "toolStripSeparator6";
-			toolStripSeparator6.Size = new System.Drawing.Size(171, 6);
+			toolStripSeparator6.Size = new System.Drawing.Size(160, 6);
 			// 
 			// filePictureBox
 			// 
 			this.filePictureBox.BackColor = System.Drawing.Color.Transparent;
 			this.filePictureBox.Image = global::magicAnime.Properties.Resources.Title;
-			this.filePictureBox.Location = new System.Drawing.Point(9, 32);
+			this.filePictureBox.Location = new System.Drawing.Point(9, 29);
 			this.filePictureBox.Name = "filePictureBox";
 			this.filePictureBox.Size = new System.Drawing.Size(16, 16);
 			this.filePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -207,7 +208,7 @@
 			// 
 			this.titlePictureBox.BackColor = System.Drawing.Color.Transparent;
 			this.titlePictureBox.Image = global::magicAnime.Properties.Resources.Movie;
-			this.titlePictureBox.Location = new System.Drawing.Point(9, 8);
+			this.titlePictureBox.Location = new System.Drawing.Point(9, 7);
 			this.titlePictureBox.Name = "titlePictureBox";
 			this.titlePictureBox.Size = new System.Drawing.Size(16, 16);
 			this.titlePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -218,7 +219,7 @@
 			// 
 			this.statusPictureBox.BackColor = System.Drawing.Color.Transparent;
 			this.statusPictureBox.Image = global::magicAnime.Properties.Resources.Flag;
-			this.statusPictureBox.Location = new System.Drawing.Point(9, 59);
+			this.statusPictureBox.Location = new System.Drawing.Point(9, 54);
 			this.statusPictureBox.Name = "statusPictureBox";
 			this.statusPictureBox.Size = new System.Drawing.Size(16, 16);
 			this.statusPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -229,7 +230,7 @@
 			// 
 			this.datePictureBox.BackColor = System.Drawing.Color.Transparent;
 			this.datePictureBox.Image = global::magicAnime.Properties.Resources.DateTime;
-			this.datePictureBox.Location = new System.Drawing.Point(311, 59);
+			this.datePictureBox.Location = new System.Drawing.Point(311, 54);
 			this.datePictureBox.Name = "datePictureBox";
 			this.datePictureBox.Size = new System.Drawing.Size(16, 16);
 			this.datePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -241,9 +242,9 @@
 			this.dataGrid.AllowUserToAddRows = false;
 			this.dataGrid.AllowUserToDeleteRows = false;
 			this.dataGrid.AllowUserToResizeRows = false;
-			this.dataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
+			this.dataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.dataGrid.BackgroundColor = System.Drawing.SystemColors.Window;
 			this.dataGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.dataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
@@ -275,17 +276,17 @@
 			this.dataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
 			this.dataGrid.ShowCellToolTips = false;
 			this.dataGrid.ShowEditingIcon = false;
-			this.dataGrid.Size = new System.Drawing.Size(750, 286);
+			this.dataGrid.Size = new System.Drawing.Size(750, 261);
 			this.dataGrid.TabIndex = 0;
-			this.dataGrid.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGrid_CellMouseUp);
-			this.dataGrid.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_CellLeave);
-			this.dataGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_CellDoubleClick);
-			this.dataGrid.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dataGrid_MouseMove);
-			this.dataGrid.CellStateChanged += new System.Windows.Forms.DataGridViewCellStateChangedEventHandler(this.dataGrid_CellStateChanged);
-			this.dataGrid.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dataGrid_MouseUp);
-			this.dataGrid.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dataGrid_CellPainting);
 			this.dataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_CellClick);
+			this.dataGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_CellDoubleClick);
+			this.dataGrid.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_CellLeave);
+			this.dataGrid.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGrid_CellMouseUp);
+			this.dataGrid.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dataGrid_CellPainting);
+			this.dataGrid.CellStateChanged += new System.Windows.Forms.DataGridViewCellStateChangedEventHandler(this.dataGrid_CellStateChanged);
 			this.dataGrid.SelectionChanged += new System.EventHandler(this.dataGrid_SelectionChanged);
+			this.dataGrid.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dataGrid_MouseMove);
+			this.dataGrid.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dataGrid_MouseUp);
 			// 
 			// Column1
 			// 
@@ -366,7 +367,7 @@
             this.ExitMenu});
 			this.fileMenu.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.fileMenu.Name = "fileMenu";
-			this.fileMenu.Size = new System.Drawing.Size(71, 18);
+			this.fileMenu.Size = new System.Drawing.Size(66, 18);
 			this.fileMenu.Text = "ファイル(&F)";
 			// 
 			// NewAnimeMenu
@@ -375,7 +376,7 @@
 			this.NewAnimeMenu.ImageTransparentColor = System.Drawing.Color.Fuchsia;
 			this.NewAnimeMenu.Name = "NewAnimeMenu";
 			this.NewAnimeMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-			this.NewAnimeMenu.Size = new System.Drawing.Size(256, 22);
+			this.NewAnimeMenu.Size = new System.Drawing.Size(235, 22);
 			this.NewAnimeMenu.Text = "新しい番組(&N)";
 			this.NewAnimeMenu.Click += new System.EventHandler(this.NewAnimeMenu_Click);
 			// 
@@ -385,7 +386,7 @@
 			this.DeleteAnimeMenu.ImageTransparentColor = System.Drawing.Color.Fuchsia;
 			this.DeleteAnimeMenu.Name = "DeleteAnimeMenu";
 			this.DeleteAnimeMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-			this.DeleteAnimeMenu.Size = new System.Drawing.Size(256, 22);
+			this.DeleteAnimeMenu.Size = new System.Drawing.Size(235, 22);
 			this.DeleteAnimeMenu.Text = "番組の削除(&D)";
 			this.DeleteAnimeMenu.Click += new System.EventHandler(this.DeleteAnimeMenu_Click);
 			// 
@@ -395,14 +396,14 @@
 			this.programPropertyMenu.ImageTransparentColor = System.Drawing.Color.Fuchsia;
 			this.programPropertyMenu.Name = "programPropertyMenu";
 			this.programPropertyMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-			this.programPropertyMenu.Size = new System.Drawing.Size(256, 22);
+			this.programPropertyMenu.Size = new System.Drawing.Size(235, 22);
 			this.programPropertyMenu.Text = "番組のプロパティ(&P)";
 			this.programPropertyMenu.Click += new System.EventHandler(this.programPropertyMenu_Click);
 			// 
 			// toolStripMenuItem1
 			// 
 			this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-			this.toolStripMenuItem1.Size = new System.Drawing.Size(253, 6);
+			this.toolStripMenuItem1.Size = new System.Drawing.Size(232, 6);
 			// 
 			// RefreshMenu
 			// 
@@ -410,7 +411,7 @@
 			this.RefreshMenu.ImageTransparentColor = System.Drawing.Color.Fuchsia;
 			this.RefreshMenu.Name = "RefreshMenu";
 			this.RefreshMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-			this.RefreshMenu.Size = new System.Drawing.Size(256, 22);
+			this.RefreshMenu.Size = new System.Drawing.Size(235, 22);
 			this.RefreshMenu.Text = "新着データ更新(&R)";
 			this.RefreshMenu.Click += new System.EventHandler(this.RefreshMenu_Clicked);
 			// 
@@ -419,21 +420,21 @@
 			this.ForceRefreshMenu.Image = global::magicAnime.Properties.Resources.FullUpdate;
 			this.ForceRefreshMenu.ImageTransparentColor = System.Drawing.Color.Fuchsia;
 			this.ForceRefreshMenu.Name = "ForceRefreshMenu";
-			this.ForceRefreshMenu.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
-						| System.Windows.Forms.Keys.R)));
-			this.ForceRefreshMenu.Size = new System.Drawing.Size(256, 22);
+			this.ForceRefreshMenu.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.R)));
+			this.ForceRefreshMenu.Size = new System.Drawing.Size(235, 22);
 			this.ForceRefreshMenu.Text = "完全データ更新(&E)";
 			this.ForceRefreshMenu.Click += new System.EventHandler(this.ForceRefreshMenu_Click);
 			// 
 			// toolStripSeparator1
 			// 
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
-			this.toolStripSeparator1.Size = new System.Drawing.Size(253, 6);
+			this.toolStripSeparator1.Size = new System.Drawing.Size(232, 6);
 			// 
 			// SortMenu
 			// 
 			this.SortMenu.Name = "SortMenu";
-			this.SortMenu.Size = new System.Drawing.Size(256, 22);
+			this.SortMenu.Size = new System.Drawing.Size(235, 22);
 			this.SortMenu.Text = "番組をソート(&S)";
 			this.SortMenu.Click += new System.EventHandler(this.SortMenu_Click);
 			// 
@@ -441,14 +442,14 @@
 			// 
 			this.OnReleaseUnreadMenu.Name = "OnReleaseUnreadMenu";
 			this.OnReleaseUnreadMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-			this.OnReleaseUnreadMenu.Size = new System.Drawing.Size(256, 22);
+			this.OnReleaseUnreadMenu.Size = new System.Drawing.Size(235, 22);
 			this.OnReleaseUnreadMenu.Text = "全ての未読フラグを解除(&F)";
 			this.OnReleaseUnreadMenu.Click += new System.EventHandler(this.OnReleaseUnreadMenu_Click);
 			// 
 			// toolStripMenuItem4
 			// 
 			this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-			this.toolStripMenuItem4.Size = new System.Drawing.Size(253, 6);
+			this.toolStripMenuItem4.Size = new System.Drawing.Size(232, 6);
 			this.toolStripMenuItem4.Visible = false;
 			// 
 			// StoreAllMenu
@@ -457,20 +458,20 @@
 			this.StoreAllMenu.ImageTransparentColor = System.Drawing.Color.Fuchsia;
 			this.StoreAllMenu.Name = "StoreAllMenu";
 			this.StoreAllMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-			this.StoreAllMenu.Size = new System.Drawing.Size(256, 22);
+			this.StoreAllMenu.Size = new System.Drawing.Size(235, 22);
 			this.StoreAllMenu.Text = "最終保存先へ転送(&M)";
 			this.StoreAllMenu.Click += new System.EventHandler(this.StoreAllMenu_Click);
 			// 
 			// toolStripMenuItem2
 			// 
 			this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-			this.toolStripMenuItem2.Size = new System.Drawing.Size(253, 6);
+			this.toolStripMenuItem2.Size = new System.Drawing.Size(232, 6);
 			// 
 			// OptionMenu
 			// 
 			this.OptionMenu.Name = "OptionMenu";
 			this.OptionMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-			this.OptionMenu.Size = new System.Drawing.Size(256, 22);
+			this.OptionMenu.Size = new System.Drawing.Size(235, 22);
 			this.OptionMenu.Text = "オプション(&O)";
 			this.OptionMenu.Click += new System.EventHandler(this.OptionMenu_Click);
 			// 
@@ -478,20 +479,20 @@
 			// 
 			this.LogShowMenuItem.Name = "LogShowMenuItem";
 			this.LogShowMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
-			this.LogShowMenuItem.Size = new System.Drawing.Size(256, 22);
+			this.LogShowMenuItem.Size = new System.Drawing.Size(235, 22);
 			this.LogShowMenuItem.Text = "ログ表示(&L)";
 			this.LogShowMenuItem.Click += new System.EventHandler(this.LogShowMenuItem_Click);
 			// 
 			// toolStripMenuItem3
 			// 
 			this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-			this.toolStripMenuItem3.Size = new System.Drawing.Size(253, 6);
+			this.toolStripMenuItem3.Size = new System.Drawing.Size(232, 6);
 			// 
 			// ExitMenu
 			// 
 			this.ExitMenu.Name = "ExitMenu";
 			this.ExitMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-			this.ExitMenu.Size = new System.Drawing.Size(256, 22);
+			this.ExitMenu.Size = new System.Drawing.Size(235, 22);
 			this.ExitMenu.Text = "終了(&X)";
 			this.ExitMenu.Click += new System.EventHandler(this.ExitMenu_Click);
 			// 
@@ -504,7 +505,7 @@
             this.toolStripMenuItem7,
             this.AutoShutdownMenu});
 			this.PowerMenuItem.Name = "PowerMenuItem";
-			this.PowerMenuItem.Size = new System.Drawing.Size(83, 18);
+			this.PowerMenuItem.Size = new System.Drawing.Size(77, 18);
 			this.PowerMenuItem.Text = "エンコード(&E)";
 			this.PowerMenuItem.DropDownOpened += new System.EventHandler(this.PowerMenuItem_DropDownOpened);
 			this.PowerMenuItem.Click += new System.EventHandler(this.PowerMenuItem_Click);
@@ -512,9 +513,9 @@
 			// BatchEncodeAllMenu
 			// 
 			this.BatchEncodeAllMenu.Name = "BatchEncodeAllMenu";
-			this.BatchEncodeAllMenu.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
-						| System.Windows.Forms.Keys.B)));
-			this.BatchEncodeAllMenu.Size = new System.Drawing.Size(354, 22);
+			this.BatchEncodeAllMenu.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.B)));
+			this.BatchEncodeAllMenu.Size = new System.Drawing.Size(324, 22);
 			this.BatchEncodeAllMenu.Text = "未処理分をエンコードキューに入れる(&E)";
 			this.BatchEncodeAllMenu.Click += new System.EventHandler(this.BatchEncodeAllMenu_Click);
 			// 
@@ -527,13 +528,13 @@
             toolStripSeparator6,
             this.BatchListNothingMenuItem});
 			this.BatchListMenuItem.Name = "BatchListMenuItem";
-			this.BatchListMenuItem.Size = new System.Drawing.Size(354, 22);
+			this.BatchListMenuItem.Size = new System.Drawing.Size(324, 22);
 			this.BatchListMenuItem.Text = "バッチエンコードキュー";
 			// 
 			// JobsCancelMenu
 			// 
 			this.JobsCancelMenu.Name = "JobsCancelMenu";
-			this.JobsCancelMenu.Size = new System.Drawing.Size(174, 22);
+			this.JobsCancelMenu.Size = new System.Drawing.Size(163, 22);
 			this.JobsCancelMenu.Text = "全てキャンセル";
 			this.JobsCancelMenu.Click += new System.EventHandler(this.JobsCancelMenu_Click);
 			// 
@@ -541,7 +542,7 @@
 			// 
 			this.EncodingNothingMenuItem.Enabled = false;
 			this.EncodingNothingMenuItem.Name = "EncodingNothingMenuItem";
-			this.EncodingNothingMenuItem.Size = new System.Drawing.Size(174, 22);
+			this.EncodingNothingMenuItem.Size = new System.Drawing.Size(163, 22);
 			this.EncodingNothingMenuItem.Text = "(エンコード中なし)";
 			this.EncodingNothingMenuItem.Visible = false;
 			// 
@@ -549,19 +550,19 @@
 			// 
 			this.BatchListNothingMenuItem.Enabled = false;
 			this.BatchListNothingMenuItem.Name = "BatchListNothingMenuItem";
-			this.BatchListNothingMenuItem.Size = new System.Drawing.Size(174, 22);
+			this.BatchListNothingMenuItem.Size = new System.Drawing.Size(163, 22);
 			this.BatchListNothingMenuItem.Text = "(エンコード待ちなし)";
 			this.BatchListNothingMenuItem.Visible = false;
 			// 
 			// toolStripMenuItem7
 			// 
 			this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-			this.toolStripMenuItem7.Size = new System.Drawing.Size(351, 6);
+			this.toolStripMenuItem7.Size = new System.Drawing.Size(321, 6);
 			// 
 			// AutoShutdownMenu
 			// 
 			this.AutoShutdownMenu.Name = "AutoShutdownMenu";
-			this.AutoShutdownMenu.Size = new System.Drawing.Size(354, 22);
+			this.AutoShutdownMenu.Size = new System.Drawing.Size(324, 22);
 			this.AutoShutdownMenu.Text = "エンコード完了時にシャットダウン(&S)";
 			this.AutoShutdownMenu.Click += new System.EventHandler(this.AutoShutdownMenu_Click);
 			// 
@@ -574,37 +575,37 @@
             this.toolStripSeparator7,
             this.AboutMenu});
 			this.ヘルプHToolStripMenuItem.Name = "ヘルプHToolStripMenuItem";
-			this.ヘルプHToolStripMenuItem.Size = new System.Drawing.Size(67, 18);
+			this.ヘルプHToolStripMenuItem.Size = new System.Drawing.Size(62, 18);
 			this.ヘルプHToolStripMenuItem.Text = "ヘルプ(&H)";
 			// 
 			// helpMenu
 			// 
 			this.helpMenu.Name = "helpMenu";
-			this.helpMenu.Size = new System.Drawing.Size(182, 22);
+			this.helpMenu.Size = new System.Drawing.Size(167, 22);
 			this.helpMenu.Text = "公式サイト(&W)";
 			this.helpMenu.Click += new System.EventHandler(this.helpMenu_Click);
 			// 
 			// toolStripMenuItem8
 			// 
 			this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-			this.toolStripMenuItem8.Size = new System.Drawing.Size(179, 6);
+			this.toolStripMenuItem8.Size = new System.Drawing.Size(164, 6);
 			// 
 			// applicationDataMenuItem
 			// 
 			this.applicationDataMenuItem.Name = "applicationDataMenuItem";
-			this.applicationDataMenuItem.Size = new System.Drawing.Size(182, 22);
+			this.applicationDataMenuItem.Size = new System.Drawing.Size(167, 22);
 			this.applicationDataMenuItem.Text = "アプリケーションデータ";
 			this.applicationDataMenuItem.Click += new System.EventHandler(this.applicationDataMenuItem_Click);
 			// 
 			// toolStripSeparator7
 			// 
 			this.toolStripSeparator7.Name = "toolStripSeparator7";
-			this.toolStripSeparator7.Size = new System.Drawing.Size(179, 6);
+			this.toolStripSeparator7.Size = new System.Drawing.Size(164, 6);
 			// 
 			// AboutMenu
 			// 
 			this.AboutMenu.Name = "AboutMenu";
-			this.AboutMenu.Size = new System.Drawing.Size(182, 22);
+			this.AboutMenu.Size = new System.Drawing.Size(167, 22);
 			this.AboutMenu.Text = "バージョン情報(&A)...";
 			this.AboutMenu.Click += new System.EventHandler(this.AboutMenu_Click);
 			// 
@@ -615,7 +616,7 @@
             this.toolStripMenuItem10,
             this.debugForceEmptyMenu});
 			this.debugMenu.Name = "debugMenu";
-			this.debugMenu.Size = new System.Drawing.Size(75, 18);
+			this.debugMenu.Size = new System.Drawing.Size(69, 18);
 			this.debugMenu.Text = "デバッグ(&D)";
 			this.debugMenu.Visible = false;
 			this.debugMenu.DropDownOpening += new System.EventHandler(this.debugMenu_DropDownOpening);
@@ -623,19 +624,19 @@
 			// debugShutdownMenu
 			// 
 			this.debugShutdownMenu.Name = "debugShutdownMenu";
-			this.debugShutdownMenu.Size = new System.Drawing.Size(331, 22);
+			this.debugShutdownMenu.Size = new System.Drawing.Size(305, 22);
 			this.debugShutdownMenu.Text = "シャットダウンテスト";
 			this.debugShutdownMenu.Click += new System.EventHandler(this.debugShutdownMenu_Click);
 			// 
 			// toolStripMenuItem10
 			// 
 			this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-			this.toolStripMenuItem10.Size = new System.Drawing.Size(328, 6);
+			this.toolStripMenuItem10.Size = new System.Drawing.Size(302, 6);
 			// 
 			// debugForceEmptyMenu
 			// 
 			this.debugForceEmptyMenu.Name = "debugForceEmptyMenu";
-			this.debugForceEmptyMenu.Size = new System.Drawing.Size(331, 22);
+			this.debugForceEmptyMenu.Size = new System.Drawing.Size(305, 22);
 			this.debugForceEmptyMenu.Text = "更新時、しょぼかる放送データを強制的に空にする";
 			this.debugForceEmptyMenu.Click += new System.EventHandler(this.debugForceEmptyMenu_Click);
 			// 
@@ -648,7 +649,7 @@
             this.todayOnAirLabel,
             this.storeFolderLabel,
             this.recordDriveFreeSpaceLabel});
-			this.statusBar.Location = new System.Drawing.Point(0, 571);
+			this.statusBar.Location = new System.Drawing.Point(0, 521);
 			this.statusBar.Name = "statusBar";
 			this.statusBar.Size = new System.Drawing.Size(750, 29);
 			this.statusBar.Stretch = false;
@@ -659,15 +660,15 @@
 			// 
 			this.logStatusLabel.ActiveLinkColor = System.Drawing.SystemColors.ControlText;
 			this.logStatusLabel.BackColor = System.Drawing.SystemColors.Control;
-			this.logStatusLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
-						| System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
-						| System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+			this.logStatusLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
 			this.logStatusLabel.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
 			this.logStatusLabel.Font = new System.Drawing.Font("メイリオ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
 			this.logStatusLabel.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.logStatusLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.logStatusLabel.Name = "logStatusLabel";
-			this.logStatusLabel.Size = new System.Drawing.Size(447, 24);
+			this.logStatusLabel.Size = new System.Drawing.Size(463, 24);
 			this.logStatusLabel.Spring = true;
 			this.logStatusLabel.Text = "起動中・・・";
 			this.logStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -675,20 +676,20 @@
 			// 
 			// toolStripStatusLabel1
 			// 
-			this.toolStripStatusLabel1.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
-						| System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
-						| System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+			this.toolStripStatusLabel1.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
 			this.toolStripStatusLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
 			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
 			this.toolStripStatusLabel1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-			this.toolStripStatusLabel1.Size = new System.Drawing.Size(94, 24);
+			this.toolStripStatusLabel1.Size = new System.Drawing.Size(87, 24);
 			this.toolStripStatusLabel1.Text = "今度の放送";
 			// 
 			// todayOnAirLabel
 			// 
-			this.todayOnAirLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
-						| System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
-						| System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+			this.todayOnAirLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
 			this.todayOnAirLabel.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
 			this.todayOnAirLabel.Name = "todayOnAirLabel";
 			this.todayOnAirLabel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
@@ -697,9 +698,9 @@
 			// storeFolderLabel
 			// 
 			this.storeFolderLabel.AutoToolTip = true;
-			this.storeFolderLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
-						| System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
-						| System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+			this.storeFolderLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
 			this.storeFolderLabel.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
 			this.storeFolderLabel.Image = ((System.Drawing.Image)(resources.GetObject("storeFolderLabel.Image")));
 			this.storeFolderLabel.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -709,7 +710,7 @@
 			this.storeFolderLabel.LinkColor = System.Drawing.SystemColors.HotTrack;
 			this.storeFolderLabel.Name = "storeFolderLabel";
 			this.storeFolderLabel.Padding = new System.Windows.Forms.Padding(10, 2, 10, 2);
-			this.storeFolderLabel.Size = new System.Drawing.Size(86, 24);
+			this.storeFolderLabel.Size = new System.Drawing.Size(81, 24);
 			this.storeFolderLabel.Text = "保存先";
 			this.storeFolderLabel.ToolTipText = "保存先";
 			this.storeFolderLabel.Click += new System.EventHandler(this.storeFolderLabel_Click);
@@ -717,9 +718,9 @@
 			// recordDriveFreeSpaceLabel
 			// 
 			this.recordDriveFreeSpaceLabel.AutoToolTip = true;
-			this.recordDriveFreeSpaceLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
-						| System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
-						| System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+			this.recordDriveFreeSpaceLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
 			this.recordDriveFreeSpaceLabel.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
 			this.recordDriveFreeSpaceLabel.Image = ((System.Drawing.Image)(resources.GetObject("recordDriveFreeSpaceLabel.Image")));
 			this.recordDriveFreeSpaceLabel.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -729,7 +730,7 @@
 			this.recordDriveFreeSpaceLabel.LinkColor = System.Drawing.SystemColors.HotTrack;
 			this.recordDriveFreeSpaceLabel.Name = "recordDriveFreeSpaceLabel";
 			this.recordDriveFreeSpaceLabel.Padding = new System.Windows.Forms.Padding(10, 2, 10, 2);
-			this.recordDriveFreeSpaceLabel.Size = new System.Drawing.Size(84, 24);
+			this.recordDriveFreeSpaceLabel.Size = new System.Drawing.Size(80, 24);
 			this.recordDriveFreeSpaceLabel.Text = "0 [MB]";
 			this.recordDriveFreeSpaceLabel.ToolTipText = "録画フォルダの空き容量";
 			this.recordDriveFreeSpaceLabel.Click += new System.EventHandler(this.recordDriveFreeSpaceLabel_Click);
@@ -845,8 +846,8 @@
 			// 
 			// panel3
 			// 
-			this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
+			this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel3.BackColor = System.Drawing.Color.Transparent;
 			this.panel3.Controls.Add(this.datePictureBox);
 			this.panel3.Controls.Add(this.statusPictureBox);
@@ -860,20 +861,20 @@
 			this.panel3.Controls.Add(label7);
 			this.panel3.Controls.Add(this.filePathLabel);
 			this.panel3.Controls.Add(label4);
-			this.panel3.Location = new System.Drawing.Point(0, 66);
+			this.panel3.Location = new System.Drawing.Point(0, 61);
 			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(575, 80);
+			this.panel3.Size = new System.Drawing.Size(575, 73);
 			this.panel3.TabIndex = 13;
 			// 
 			// titleLabel
 			// 
-			this.titleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
+			this.titleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.titleLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.titleLabel.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.titleLabel.Location = new System.Drawing.Point(97, 7);
+			this.titleLabel.Location = new System.Drawing.Point(97, 6);
 			this.titleLabel.Name = "titleLabel";
-			this.titleLabel.Size = new System.Drawing.Size(475, 20);
+			this.titleLabel.Size = new System.Drawing.Size(475, 18);
 			this.titleLabel.TabIndex = 11;
 			this.titleLabel.UseMnemonic = false;
 			// 
@@ -881,27 +882,27 @@
 			// 
 			this.RecordStateLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.RecordStateLabel.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.RecordStateLabel.Location = new System.Drawing.Point(97, 59);
+			this.RecordStateLabel.Location = new System.Drawing.Point(97, 54);
 			this.RecordStateLabel.Name = "RecordStateLabel";
-			this.RecordStateLabel.Size = new System.Drawing.Size(196, 20);
+			this.RecordStateLabel.Size = new System.Drawing.Size(196, 18);
 			this.RecordStateLabel.TabIndex = 6;
 			// 
 			// dateTimeLabel
 			// 
-			this.dateTimeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
+			this.dateTimeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.dateTimeLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.dateTimeLabel.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.dateTimeLabel.Location = new System.Drawing.Point(412, 60);
+			this.dateTimeLabel.Location = new System.Drawing.Point(412, 55);
 			this.dateTimeLabel.Name = "dateTimeLabel";
-			this.dateTimeLabel.Size = new System.Drawing.Size(160, 20);
+			this.dateTimeLabel.Size = new System.Drawing.Size(160, 18);
 			this.dateTimeLabel.TabIndex = 8;
 			// 
 			// label9
 			// 
 			this.label9.AutoSize = true;
 			this.label9.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.label9.Location = new System.Drawing.Point(333, 60);
+			this.label9.Location = new System.Drawing.Point(333, 55);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(70, 15);
 			this.label9.TabIndex = 7;
@@ -909,13 +910,13 @@
 			// 
 			// filePathLabel
 			// 
-			this.filePathLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
+			this.filePathLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.filePathLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.filePathLabel.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.filePathLabel.Location = new System.Drawing.Point(97, 31);
+			this.filePathLabel.Location = new System.Drawing.Point(97, 28);
 			this.filePathLabel.Name = "filePathLabel";
-			this.filePathLabel.Size = new System.Drawing.Size(475, 20);
+			this.filePathLabel.Size = new System.Drawing.Size(475, 18);
 			this.filePathLabel.TabIndex = 4;
 			this.filePathLabel.UseMnemonic = false;
 			// 
@@ -1022,7 +1023,7 @@
 			// 
 			this.unreadListMenu.Enabled = false;
 			this.unreadListMenu.Name = "unreadListMenu";
-			this.unreadListMenu.Size = new System.Drawing.Size(102, 22);
+			this.unreadListMenu.Size = new System.Drawing.Size(97, 22);
 			this.unreadListMenu.Text = "(なし)";
 			// 
 			// toolStripSeparator5
@@ -1069,26 +1070,26 @@
 			// weekModeMenu
 			// 
 			this.weekModeMenu.Name = "weekModeMenu";
-			this.weekModeMenu.Size = new System.Drawing.Size(168, 22);
+			this.weekModeMenu.Size = new System.Drawing.Size(157, 22);
 			this.weekModeMenu.Text = "週単位で表示(&W)";
 			this.weekModeMenu.Click += new System.EventHandler(this.weakModeMenu_Click);
 			// 
 			// dayModeMenu
 			// 
 			this.dayModeMenu.Name = "dayModeMenu";
-			this.dayModeMenu.Size = new System.Drawing.Size(168, 22);
+			this.dayModeMenu.Size = new System.Drawing.Size(157, 22);
 			this.dayModeMenu.Text = "日単位で表示(&D)";
 			this.dayModeMenu.Click += new System.EventHandler(this.dayModeMenu_Click);
 			// 
 			// toolStripMenuItem9
 			// 
 			this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-			this.toolStripMenuItem9.Size = new System.Drawing.Size(165, 6);
+			this.toolStripMenuItem9.Size = new System.Drawing.Size(154, 6);
 			// 
 			// calenderModeOptionMenu
 			// 
 			this.calenderModeOptionMenu.Name = "calenderModeOptionMenu";
-			this.calenderModeOptionMenu.Size = new System.Drawing.Size(168, 22);
+			this.calenderModeOptionMenu.Size = new System.Drawing.Size(157, 22);
 			this.calenderModeOptionMenu.Text = "設定(&S)";
 			this.calenderModeOptionMenu.Click += new System.EventHandler(this.calenderModeOptionMenu_Click);
 			// 
@@ -1126,10 +1127,10 @@
 			// 
 			// viewSplitContainer
 			// 
-			this.viewSplitContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this.viewSplitContainer.Location = new System.Drawing.Point(0, 149);
+			this.viewSplitContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.viewSplitContainer.Location = new System.Drawing.Point(0, 137);
 			this.viewSplitContainer.Name = "viewSplitContainer";
 			this.viewSplitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
 			// 
@@ -1140,15 +1141,15 @@
 			// viewSplitContainer.Panel2
 			// 
 			this.viewSplitContainer.Panel2.Controls.Add(this.logListBox);
-			this.viewSplitContainer.Size = new System.Drawing.Size(750, 419);
-			this.viewSplitContainer.SplitterDistance = 288;
+			this.viewSplitContainer.Size = new System.Drawing.Size(750, 384);
+			this.viewSplitContainer.SplitterDistance = 263;
 			this.viewSplitContainer.TabIndex = 15;
 			// 
 			// logListBox
 			// 
-			this.logListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
+			this.logListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.logListBox.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
 			this.logListBox.FormattingEnabled = true;
 			this.logListBox.IntegralHeight = false;
@@ -1156,14 +1157,14 @@
 			this.logListBox.Location = new System.Drawing.Point(3, 3);
 			this.logListBox.Name = "logListBox";
 			this.logListBox.ScrollAlwaysVisible = true;
-			this.logListBox.Size = new System.Drawing.Size(747, 124);
+			this.logListBox.Size = new System.Drawing.Size(747, 115);
 			this.logListBox.TabIndex = 0;
 			// 
 			// MainForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 11F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(750, 600);
+			this.ClientSize = new System.Drawing.Size(750, 550);
 			this.Controls.Add(this.viewSplitContainer);
 			this.Controls.Add(this.mainToolBar);
 			this.Controls.Add(this.panel3);
@@ -1174,10 +1175,10 @@
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "mAgicAnime.NET";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
 			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.Shown += new System.EventHandler(this.MainForm_Shown);
-			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
-			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
 			((System.ComponentModel.ISupportInitialize)(this.filePictureBox)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.titlePictureBox)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.statusPictureBox)).EndInit();
@@ -1194,6 +1195,7 @@
 			this.mainToolBar.PerformLayout();
 			this.viewSplitContainer.Panel1.ResumeLayout(false);
 			this.viewSplitContainer.Panel2.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.viewSplitContainer)).EndInit();
 			this.viewSplitContainer.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
